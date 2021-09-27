@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="appTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">72dp</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:background">#FD49A0</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:drawableTop">@color/purple_200</item>
+        <item name="android:drawableEnd">@color/white</item>
+    </style>
+</resources>
