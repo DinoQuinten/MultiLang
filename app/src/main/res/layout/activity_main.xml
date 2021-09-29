@@ -1,34 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    android:background="#FFE0B2"
     android:orientation="vertical"
-    android:background="#FFE0B2">
+    tools:context=".MainActivity"
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/category_numbers">
 
     <TextView
-        android:background="#4871E8"
+        style="@style/appTheme"
         android:layout_gravity="left"
-        android:text="Numbers"
+        android:background="?android:attr/selectableItemBackground"
         android:onClick="numbers_list"
-        style="@style/appTheme"
-        />
-    <TextView
-        style="@style/appTheme"
-        android:text="Family Relative"
-        android:onClick="Family_list"
-        android:background="#B175FF"/>
+        android:text="Numbers"
+        android:textColor="@color/black" />
+    </FrameLayout>
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/category_family">
     <TextView
         style="@style/appTheme"
-        android:id="@+id/color"
-        android:background="#ff52da"
-        android:text="Colors"/>
+        android:background="?android:attr/selectableItemBackground"
+        android:onClick="Family_list"
+        android:text="Family Relative" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/category_colors">
+
+        <TextView
+            android:id="@+id/color"
+            style="@style/appTheme"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="Colors" />
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/category_phrases">
     <TextView
         style="@style/appTheme"
-        android:background="#6840e3"
+        android:background="?android:attr/selectableItemBackground"
         android:onClick="Phrases_list"
-        android:text="Phrases"/>
+        android:text="Phrases" />
+    </FrameLayout>
 </LinearLayout>

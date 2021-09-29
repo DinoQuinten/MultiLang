@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         TextView color= (TextView) findViewById(R.id.color);
         color.setOnClickListener(v -> {
             Intent Color= new Intent(MainActivity.this,Colors.class);
